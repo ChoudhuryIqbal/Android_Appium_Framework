@@ -5,6 +5,7 @@
     <classes>
       <class name="com.appium.android.appium_android_framework.TestBase">
         <methods>
+          <include name="Test002"/>
           <include name="Test001"/>
           <include name="setUp"/>
         </methods>
