@@ -16,6 +16,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import io.appium.java_client.MultiTouchAction;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -99,6 +100,16 @@ public class TestBase {
 			}
 		}
 		 
+		
+	}
+	
+	public void multiTouchAction() {
+		TouchAction actions1=new TouchAction(ad);
+		TouchAction actions2=new TouchAction(ad);
+		TouchAction actions3=new TouchAction(ad);
+		MultiTouchAction maction=new MultiTouchAction(ad);
+		maction.add(actions1).add(actions2).add(actions3).perform();
+		
 		
 	}
 	@AfterMethod
