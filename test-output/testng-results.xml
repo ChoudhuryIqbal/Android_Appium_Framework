@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="159045" started-at="2017-08-15T00:21:39Z" finished-at="2017-08-15T00:24:18Z">
+  <suite name="Default suite" duration-ms="186042" started-at="2017-08-15T02:34:14Z" finished-at="2017-08-15T02:37:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="159045" started-at="2017-08-15T00:21:39Z" finished-at="2017-08-15T00:24:18Z">
+    <test name="Default test" duration-ms="186042" started-at="2017-08-15T02:34:14Z" finished-at="2017-08-15T02:37:20Z">
       <class name="com.appium.android.appium_android_framework.TestBase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="setUp" is-config="true" duration-ms="13823" started-at="2017-08-14T19:21:39Z" finished-at="2017-08-14T19:21:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="setUp" is-config="true" duration-ms="14895" started-at="2017-08-14T21:34:14Z" finished-at="2017-08-14T21:34:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="AlertDialog()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="AlertDialog" duration-ms="6491" started-at="2017-08-14T19:21:53Z" finished-at="2017-08-14T19:22:00Z">
+        <test-method status="PASS" signature="AlertDialog()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="AlertDialog" duration-ms="6189" started-at="2017-08-14T21:34:29Z" finished-at="2017-08-14T21:34:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AlertDialog -->
-        <test-method status="PASS" signature="closeAfterTest()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="closeAfterTest" is-config="true" duration-ms="3973" started-at="2017-08-14T19:22:00Z" finished-at="2017-08-14T19:22:04Z">
+        <test-method status="PASS" signature="closeAfterTest()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="closeAfterTest" is-config="true" duration-ms="3872" started-at="2017-08-14T21:34:35Z" finished-at="2017-08-14T21:34:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAfterTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="setUp" is-config="true" duration-ms="13170" started-at="2017-08-14T19:22:04Z" finished-at="2017-08-14T19:22:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="setUp" is-config="true" duration-ms="13222" started-at="2017-08-14T21:34:39Z" finished-at="2017-08-14T21:34:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Test001()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="Test001" duration-ms="3569" started-at="2017-08-14T19:22:17Z" finished-at="2017-08-14T19:22:20Z">
+        <test-method status="PASS" signature="Test001()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="Test001" duration-ms="3502" started-at="2017-08-14T21:34:52Z" finished-at="2017-08-14T21:34:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test001 -->
-        <test-method status="PASS" signature="closeAfterTest()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="closeAfterTest" is-config="true" duration-ms="3923" started-at="2017-08-14T19:22:20Z" finished-at="2017-08-14T19:22:24Z">
+        <test-method status="PASS" signature="closeAfterTest()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="closeAfterTest" is-config="true" duration-ms="3704" started-at="2017-08-14T21:34:56Z" finished-at="2017-08-14T21:35:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAfterTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="setUp" is-config="true" duration-ms="13312" started-at="2017-08-14T19:22:24Z" finished-at="2017-08-14T19:22:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="setUp" is-config="true" duration-ms="13317" started-at="2017-08-14T21:35:00Z" finished-at="2017-08-14T21:35:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Test002()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="Test002" duration-ms="96712" started-at="2017-08-14T19:22:38Z" finished-at="2017-08-14T19:24:14Z">
+        <test-method status="PASS" signature="Test002()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="Test002" duration-ms="97094" started-at="2017-08-14T21:35:13Z" finished-at="2017-08-14T21:36:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test002 -->
-        <test-method status="PASS" signature="closeAfterTest()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="closeAfterTest" is-config="true" duration-ms="4026" started-at="2017-08-14T19:24:14Z" finished-at="2017-08-14T19:24:18Z">
+        <test-method status="PASS" signature="closeAfterTest()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="closeAfterTest" is-config="true" duration-ms="3847" started-at="2017-08-14T21:36:50Z" finished-at="2017-08-14T21:36:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAfterTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="setUp" is-config="true" duration-ms="13607" started-at="2017-08-14T21:36:54Z" finished-at="2017-08-14T21:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="spinnerTest()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="spinnerTest" duration-ms="8812" started-at="2017-08-14T21:37:07Z" finished-at="2017-08-14T21:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spinnerTest -->
+        <test-method status="PASS" signature="closeAfterTest()[pri:0, instance:com.appium.android.appium_android_framework.TestBase@42e26948]" name="closeAfterTest" is-config="true" duration-ms="3948" started-at="2017-08-14T21:37:16Z" finished-at="2017-08-14T21:37:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAfterTest -->

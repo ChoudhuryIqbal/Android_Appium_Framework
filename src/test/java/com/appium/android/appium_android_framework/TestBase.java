@@ -49,6 +49,16 @@ public class TestBase {
 	 * Drag and drop
 	 * 
 	 */
+	
+	@Test
+	public void spinnerTest() {
+		ad.findElement(By.xpath("//android.widget.TextView[@text='Views']")).click();
+		ad.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Spinner\"));");
+		ad.findElement(By.xpath("//android.widget.TextView[@text='Spinner']")).click();
+		ad.findElementById("io.appium.android.apis:id/spinner2").click();
+		ad.findElement(By.xpath("//android.widget.CheckedTextView[@text='Pluto']")).click();
+
+	}
 	@Test
 	public void Test001() {
 		ad.findElement(By.xpath("//android.widget.TextView[@text='Views']")).click();
