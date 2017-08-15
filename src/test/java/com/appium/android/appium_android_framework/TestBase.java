@@ -102,6 +102,15 @@ public class TestBase {
 		 
 		
 	}
+	@Test
+	public void AlertDialog() {
+		ad.findElement(By.xpath("//android.widget.TextView[@text='App']")).click();
+		ad.findElement(By.xpath("//android.widget.TextView[@text='Alert Dialogs']")).click();
+		ad.findElementsById("io.appium.android.apis:id/two_buttons").get(0).click();
+		ad.findElementById("android:id/button1").click();
+
+
+	}
 	
 	public void multiTouchAction() {
 		TouchAction actions1=new TouchAction(ad);
