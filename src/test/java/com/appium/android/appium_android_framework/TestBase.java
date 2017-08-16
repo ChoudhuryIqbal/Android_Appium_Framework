@@ -56,7 +56,7 @@ public class TestBase {
 	public void  orientation() {
 		ad.rotate(org.openqa.selenium.ScreenOrientation.LANDSCAPE);
 		System.out.println(ad.getOrientation());
-		
+		ad.rotate(org.openqa.selenium.ScreenOrientation.PORTRAIT);
 		
 	}
 	public void seekBarTest() {
