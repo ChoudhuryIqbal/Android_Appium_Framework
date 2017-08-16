@@ -53,6 +53,17 @@ public class TestBase {
 
 	}
 	@Test
+	public void tapSwitchOff() {
+		ad.findElement(By.xpath("//android.widget.TextView[@text='Views']")).click();
+		ad.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Switches\"));");
+		ad.findElementByXPath("//android.widget.TextView[@text='Switches']").click();
+		 String switchStatus1 = ad.findElementById("io.appium.android.apis:id/monitored_switch").getText();
+		 if(switchStatus1.trim().equalsIgnoreCase("Monitored Switch OFF")) {
+			 AndroidElement el1 = ad.findElementById("io.appium.android.apis:id/monitored_switch");
+			 el1.tap(1,1);
+		 }
+
+	}
 	/*public void AtuTestRecorder() {
 		AtuTestRecorder recorder=new ATUTestRecorder(path),format.dateFormat,false);
 		recorder.start;
