@@ -17,6 +17,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
@@ -50,6 +51,20 @@ public class TestBase {
 		ad = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+	}
+	@Test
+	public void seekBarTest() {
+		ad.findElement(By.xpath("//android.widget.TextView[@text='Views']")).click();
+//ad.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Spinner\"));");
+		ad.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Seek Bar\"));");
+		ad.findElementByXPath("//android.widget.TextView[@text='Seek Bar']").click();
+		WebElement seekBar=ad.findElementById("io.appium.android.apis:id/seek");
+		int startX=seekBar.getLocation().getX();
+		int yAxis=seekBar.getLocation().getY();
+		int endX=seekBar.getSize().getWidth();
+		int moveToXDirectionAt=(int) (endX*0.6);
+		TouchAction act=new TouchAction(ad);
+		act.press(startX,yAxis).moveTo(moveToXDirectionAt,yAxis).release().perform();
 	}
 	
 	public void takeScreensShot() {
