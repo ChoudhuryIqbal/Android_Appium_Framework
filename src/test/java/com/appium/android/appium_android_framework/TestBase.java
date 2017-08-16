@@ -54,6 +54,7 @@ public class TestBase {
 	}
 	public void hideKeyBoard() {
 		ad.hideKeyboard();
+		//new TouchAction().press(e1).click();
 	}
 	@Test
 	public void select() throws InterruptedException {
