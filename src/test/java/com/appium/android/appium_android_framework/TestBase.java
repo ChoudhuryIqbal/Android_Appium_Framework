@@ -53,6 +53,12 @@ public class TestBase {
 
 	}
 	@Test
+	/*public void AtuTestRecorder() {
+		AtuTestRecorder recorder=new ATUTestRecorder(path),format.dateFormat,false);
+		recorder.start;
+		recorder.stop;
+		
+	}*/
 	public void  orientation() {
 		ad.rotate(org.openqa.selenium.ScreenOrientation.LANDSCAPE);
 		System.out.println(ad.getOrientation());
