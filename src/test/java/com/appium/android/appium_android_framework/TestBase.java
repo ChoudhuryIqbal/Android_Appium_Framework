@@ -52,7 +52,31 @@ public class TestBase {
 		ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	}
+	public void hideKeyBoard() {
+		ad.hideKeyboard();
+	}
 	@Test
+	public void select() throws InterruptedException {
+		ad.findElement(By.xpath("//android.widget.TextView[@text='Views']")).click();
+		ad.findElementByXPath("//android.widget.TextView[@text='Controls']").click();
+		ad.findElementByXPath("//android.widget.TextView[@text='2. Dark Theme']").click();
+		ad.findElementById("io.appium.android.apis:id/edit").sendKeys("Test");
+		ad.hideKeyboard();
+		ad.findElementById("android:id/text1").click();
+		ad.findElementByXPath("//android.widget.TextView[@text='Mars']").click();
+		//ad.findElementByXPath("//android.widget.CheckedTextView[@text='Mars']").click();//android.widget.CheckedTextView
+		Thread.sleep(3000);
+		//ad.findElementByXPath("//android.widget.CheckedTextView[@text='Mars']").click();
+		ad.findElementsById("android:id/text1").get(3).click();
+	}
+	public void typeInText() {
+		ad.findElement(By.xpath("//android.widget.TextView[@text='Views']")).click();
+		ad.findElementByXPath("//android.widget.TextView[@text='Controls']").click();
+		ad.findElementByXPath("//android.widget.TextView[@text='2. Dark Theme']").click();
+		ad.findElementById("io.appium.android.apis:id/edit").sendKeys("Test");
+
+		//2. Dark Theme
+	}
 	public void tapSwitchOff() {
 		ad.findElement(By.xpath("//android.widget.TextView[@text='Views']")).click();
 		ad.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Switches\"));");
