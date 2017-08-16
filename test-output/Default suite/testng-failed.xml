@@ -5,8 +5,8 @@
     <classes>
       <class name="com.appium.android.appium_android_framework.TestBase">
         <methods>
-          <include name="Test002"/>
-          <include name="Test001"/>
+          <include name="closeAfterTest"/>
+          <include name="dateSet"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.appium.android.appium_android_framework.TestBase -->

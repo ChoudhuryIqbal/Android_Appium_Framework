@@ -4,6 +4,7 @@
 package com.appium.android.appium_android_framework;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
@@ -11,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
@@ -61,8 +63,13 @@ public class TestBase {
 		new File(destDir).mkdirs();
 		//set file name using current date time
 		String destFile=dateFormat.format(new Date())+".png";
-		
-		
+		try {
+			FileUtils.copyFile(scrFile, new File(destDir+"/"+destFile));
+			
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
 		
 	}
 
