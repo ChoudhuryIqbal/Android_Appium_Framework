@@ -53,6 +53,12 @@ public class TestBase {
 
 	}
 	@Test
+	public void  orientation() {
+		ad.rotate(org.openqa.selenium.ScreenOrientation.LANDSCAPE);
+		System.out.println(ad.getOrientation());
+		
+		
+	}
 	public void seekBarTest() {
 		ad.findElement(By.xpath("//android.widget.TextView[@text='Views']")).click();
 //ad.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Spinner\"));");
